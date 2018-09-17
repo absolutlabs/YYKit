@@ -69,6 +69,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface YYTextView : UIScrollView <UITextInput>
 
+#pragma mark - Add class property
+/// do something like IQKeyboardManager, default NO.
+/// attention self.scrollEnable must be NO.
+@property(class, nonatomic, assign) BOOL autoCursorEnable;
+
 
 #pragma mark - Accessing the Delegate
 ///=============================================================================
@@ -239,6 +244,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable, nonatomic, copy) YYTextDebugOption *debugOption;
 
+/**
+ The truncation token string used when text is truncated. Default is nil.
+ When the value is nil, the label use "…" as default truncation token.
+ */
+@property (nullable, nonatomic, copy) NSAttributedString *truncationToken;
+
+/**
+ The maximum number of lines to use for rendering text. Default value is 0.
+ 0 means no limit.
+ */
+@property (nonatomic) NSUInteger numberOfLines;
 
 #pragma mark - Working with the Selection and Menu
 ///=============================================================================
@@ -351,6 +367,9 @@ NS_ASSUME_NONNULL_BEGIN
 #else // TARGET_INTERFACE_BUILDER
 IB_DESIGNABLE
 @interface YYTextView : UIScrollView <UITextInput>
+/// do something like IQKeyboardManager, default NO.
+@property(class, nonatomic) IBInspectable BOOL autoCursorEnable;
+
 @property (null_resettable, nonatomic, copy) IBInspectable NSString *text;
 @property (nullable, nonatomic, strong) IBInspectable UIColor *textColor;
 @property (nullable, nonatomic, strong) IBInspectable NSString *fontName_;
