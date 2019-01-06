@@ -21,6 +21,7 @@ YYSYNTH_DUMMY_CLASS(NSBundle_YYAdd)
     static NSArray *scales;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+#if TARGET_OS_IOS
         CGFloat screenScale = [UIScreen mainScreen].scale;
         if (screenScale <= 1) {
             scales = @[@1,@2,@3];
@@ -29,6 +30,9 @@ YYSYNTH_DUMMY_CLASS(NSBundle_YYAdd)
         } else {
             scales = @[@3,@2,@1];
         }
+#else
+        scales = @[@3,@2,@1];
+#endif
     });
     return scales;
 }

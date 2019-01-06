@@ -10,7 +10,7 @@
 //
 
 #import "YYMemoryCache.h"
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <pthread.h>
@@ -341,16 +341,19 @@ static inline dispatch_queue_t YYMemoryCacheGetReleaseQueue() {
     _shouldRemoveAllObjectsOnMemoryWarning = YES;
     _shouldRemoveAllObjectsWhenEnteringBackground = YES;
     
+#if TARGET_OS_IOS
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_appDidReceiveMemoryWarningNotification) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_appDidEnterBackgroundNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
-    
+#endif
     [self _trimRecursively];
     return self;
 }
 
 - (void)dealloc {
+#if TARGET_OS_IOS
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+#endif
     [_lru removeAll];
     pthread_mutex_destroy(&_lock);
 }

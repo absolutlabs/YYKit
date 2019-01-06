@@ -12,7 +12,7 @@
 #import "NSString+YYAdd.h"
 #import "NSData+YYAdd.h"
 #import "NSNumber+YYAdd.h"
-#import "UIDevice+YYAdd.h"
+
 #import "YYKitMacro.h"
 
 YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
@@ -216,7 +216,9 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#if TARGET_OS_IOS
         result = [self sizeWithFont:font constrainedToSize:size lineBreakMode:lineBreakMode];
+#endif
 #pragma clang diagnostic pop
     }
     return result;

@@ -237,6 +237,8 @@ return @(ret); \
                 } else if (strcmp(type, @encode(CGAffineTransform)) == 0) {
                     CGAffineTransform arg = va_arg(args, CGAffineTransform);
                     [inv setArgument:&arg atIndex:index];
+                    
+#if TARGET_OS_IOS
                 } else if (strcmp(type, @encode(CATransform3D)) == 0) {
                     CATransform3D arg = va_arg(args, CATransform3D);
                     [inv setArgument:&arg atIndex:index];
@@ -249,6 +251,8 @@ return @(ret); \
                 } else if (strcmp(type, @encode(UIEdgeInsets)) == 0) {
                     UIEdgeInsets arg = va_arg(args, UIEdgeInsets);
                     [inv setArgument:&arg atIndex:index];
+#endif
+                    
                 } else {
                     unsupportedType = YES;
                 }

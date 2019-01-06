@@ -9,7 +9,19 @@
 //  LICENSE file in the root directory of this source tree.
 //
 
+#import <Foundation/Foundation.h>
+
+#import <TargetConditionals.h>
+#import <Availability.h>
+
+#if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
+#import "UIDevice+YYAdd.h"
+#else
+#import <Cocoa/Cocoa.h>
+typedef NSFont UIFont;
+#endif
+
 
 NS_ASSUME_NONNULL_BEGIN
 

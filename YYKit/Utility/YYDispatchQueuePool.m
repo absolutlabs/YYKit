@@ -10,7 +10,7 @@
 //
 
 #import "YYDispatchQueuePool.h"
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 #import <libkern/OSAtomic.h>
 #import <stdatomic.h>
 
@@ -55,7 +55,7 @@ static YYDispatchContext *YYDispatchContextCreate(const char *name,
         free(context);
         return NULL;
     }
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+    if (TRUE) { //if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
         dispatch_qos_class_t qosClass = NSQualityOfServiceToQOSClass(qos);
         for (NSUInteger i = 0; i < queueCount; i++) {
             dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, qosClass, 0);

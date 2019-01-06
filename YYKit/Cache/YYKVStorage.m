@@ -10,8 +10,10 @@
 //
 
 #import "YYKVStorage.h"
+#if TARGET_OS_IOS
 #import "UIApplication+YYAdd.h"
 #import <UIKit/UIKit.h>
+#endif
 #import <time.h>
 
 #if __has_include(<sqlite3.h>)
@@ -711,11 +713,13 @@ static NSString *const kTrashDirectoryName = @"trash";
 }
 
 - (void)dealloc {
+#if TARGET_OS_IOS
     UIBackgroundTaskIdentifier taskID = [[UIApplication sharedExtensionApplication] beginBackgroundTaskWithExpirationHandler:^{}];
     [self _dbClose];
     if (taskID != UIBackgroundTaskInvalid) {
         [[UIApplication sharedExtensionApplication] endBackgroundTask:taskID];
     }
+#endif
 }
 
 - (BOOL)saveItem:(YYKVStorageItem *)item {

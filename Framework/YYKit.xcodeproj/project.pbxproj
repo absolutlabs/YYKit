@@ -3,10 +3,78 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 49;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA6DDD721E25091004CC4D9 /* YYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA6DDD621E25091004CC4D9 /* YYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DDD921E25199004CC4D9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDD821E25199004CC4D9 /* libz.tbd */; };
+		BFA6DDDB21E2519E004CC4D9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDDA21E2519E004CC4D9 /* libsqlite3.tbd */; };
+		BFA6DDDD21E251B3004CC4D9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDDC21E251B3004CC4D9 /* CoreFoundation.framework */; };
+		BFA6DDDF21E251BB004CC4D9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDDE21E251BA004CC4D9 /* CoreText.framework */; };
+		BFA6DDE121E251C1004CC4D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDE021E251C1004CC4D9 /* CoreGraphics.framework */; };
+		BFA6DDE321E251CA004CC4D9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDE221E251CA004CC4D9 /* CoreImage.framework */; };
+		BFA6DDE521E251CF004CC4D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDE421E251CF004CC4D9 /* QuartzCore.framework */; };
+		BFA6DDE721E251D9004CC4D9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDE621E251D9004CC4D9 /* ImageIO.framework */; };
+		BFA6DDE921E251F6004CC4D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDE821E251F6004CC4D9 /* SystemConfiguration.framework */; };
+		BFA6DDEB21E251FF004CC4D9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6DDEA21E251FF004CC4D9 /* Accelerate.framework */; };
+		BFA6DDEC21E2527B004CC4D9 /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260CD1BEF52730038C00A /* NSObject+YYAdd.m */; };
+		BFA6DDED21E2527B004CC4D9 /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260CF1BEF52730038C00A /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BFA6DDEE21E2527B004CC4D9 /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260D11BEF52730038C00A /* NSObject+YYAddForKVO.m */; };
+		BFA6DDEF21E2527B004CC4D9 /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260D31BEF52730038C00A /* NSString+YYAdd.m */; };
+		BFA6DDF021E2527B004CC4D9 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260CB1BEF52730038C00A /* NSNumber+YYAdd.m */; };
+		BFA6DDF121E2527B004CC4D9 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260C11BEF52730038C00A /* NSData+YYAdd.m */; };
+		BFA6DDF221E2527B004CC4D9 /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260BD1BEF52730038C00A /* NSArray+YYAdd.m */; };
+		BFA6DDF321E2527B004CC4D9 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260C51BEF52730038C00A /* NSDictionary+YYAdd.m */; };
+		BFA6DDF421E2527B004CC4D9 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260C31BEF52730038C00A /* NSDate+YYAdd.m */; };
+		BFA6DDF521E2527B004CC4D9 /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260C91BEF52730038C00A /* NSNotificationCenter+YYAdd.m */; };
+		BFA6DDF621E2527B004CC4D9 /* NSKeyedUnarchiver+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260C71BEF52730038C00A /* NSKeyedUnarchiver+YYAdd.m */; };
+		BFA6DDF721E2527B004CC4D9 /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260D71BEF52730038C00A /* NSTimer+YYAdd.m */; };
+		BFA6DDF821E2527B004CC4D9 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260BF1BEF52730038C00A /* NSBundle+YYAdd.m */; };
+		BFA6DDF921E2527B004CC4D9 /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260D51BEF52730038C00A /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BFA6DDFA21E25286004CC4D9 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261221BEF52730038C00A /* NSObject+YYModel.m */; };
+		BFA6DDFB21E25286004CC4D9 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261241BEF52730038C00A /* YYClassInfo.m */; };
+		BFA6DDFC21E25286004CC4D9 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260FD1BEF52730038C00A /* YYCache.m */; };
+		BFA6DDFD21E25286004CC4D9 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261031BEF52730038C00A /* YYMemoryCache.m */; };
+		BFA6DDFE21E25286004CC4D9 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260FF1BEF52730038C00A /* YYDiskCache.m */; };
+		BFA6DDFF21E25286004CC4D9 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261011BEF52730038C00A /* YYKVStorage.m */; };
+		BFA6DE0121E2529E004CC4D9 /* YYFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261561BEF52730038C00A /* YYFileHash.m */; };
+		BFA6DE0221E2529E004CC4D9 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261681BEF52730038C00A /* YYWeakProxy.m */; };
+		BFA6DE0321E2529E004CC4D9 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261641BEF52730038C00A /* YYTimer.m */; };
+		BFA6DE0421E2529E004CC4D9 /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261661BEF52730038C00A /* YYTransaction.m */; };
+		BFA6DE0521E2529E004CC4D9 /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B2615E1BEF52730038C00A /* YYSentinel.m */; };
+		BFA6DE0621E2529E004CC4D9 /* YYDispatchQueuePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261541BEF52730038C00A /* YYDispatchQueuePool.m */; };
+		BFA6DE0721E2529E004CC4D9 /* YYThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261601BEF52730038C00A /* YYThreadSafeArray.m */; };
+		BFA6DE0821E2529E004CC4D9 /* YYThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261621BEF52730038C00A /* YYThreadSafeDictionary.m */; };
+		BFA6DE0921E252B0004CC4D9 /* YYKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260FA1BEF52730038C00A /* YYKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0A21E252B0004CC4D9 /* NSObject+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260CC1BEF52730038C00A /* NSObject+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0B21E252B0004CC4D9 /* NSObject+YYAddForARC.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260CE1BEF52730038C00A /* NSObject+YYAddForARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0C21E252B1004CC4D9 /* NSObject+YYAddForKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260D01BEF52730038C00A /* NSObject+YYAddForKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0D21E252B1004CC4D9 /* NSString+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260D21BEF52730038C00A /* NSString+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0E21E252B1004CC4D9 /* NSNumber+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260CA1BEF52730038C00A /* NSNumber+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE0F21E252B1004CC4D9 /* NSData+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260C01BEF52730038C00A /* NSData+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1021E252B1004CC4D9 /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BC1BEF52730038C00A /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1121E252B1004CC4D9 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260C41BEF52730038C00A /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1221E252B1004CC4D9 /* NSDate+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260C21BEF52730038C00A /* NSDate+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1321E252B1004CC4D9 /* NSNotificationCenter+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260C81BEF52730038C00A /* NSNotificationCenter+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1421E252B1004CC4D9 /* NSKeyedUnarchiver+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260C61BEF52730038C00A /* NSKeyedUnarchiver+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1521E252B1004CC4D9 /* NSTimer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260D61BEF52730038C00A /* NSTimer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1621E252B1004CC4D9 /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BE1BEF52730038C00A /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1721E252B1004CC4D9 /* NSThread+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260D41BEF52730038C00A /* NSThread+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1821E252C3004CC4D9 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261211BEF52730038C00A /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1921E252C3004CC4D9 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261231BEF52730038C00A /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1A21E252C3004CC4D9 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260FC1BEF52730038C00A /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1B21E252C3004CC4D9 /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261021BEF52730038C00A /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1C21E252C3004CC4D9 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260FE1BEF52730038C00A /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1D21E252C3004CC4D9 /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261001BEF52730038C00A /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE1F21E252D7004CC4D9 /* YYFileHash.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261551BEF52730038C00A /* YYFileHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2021E252D7004CC4D9 /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261671BEF52730038C00A /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2121E252D7004CC4D9 /* YYTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261631BEF52730038C00A /* YYTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2221E252D7004CC4D9 /* YYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261651BEF52730038C00A /* YYTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2321E252D7004CC4D9 /* YYSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B2615D1BEF52730038C00A /* YYSentinel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2421E252D7004CC4D9 /* YYDispatchQueuePool.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261531BEF52730038C00A /* YYDispatchQueuePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2521E252D7004CC4D9 /* YYThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B2615F1BEF52730038C00A /* YYThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA6DE2621E252D7004CC4D9 /* YYThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261611BEF52730038C00A /* YYThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9B2616A1BEF52730038C00A /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BC1BEF52730038C00A /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9B2616B1BEF52730038C00A /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B260BD1BEF52730038C00A /* NSArray+YYAdd.m */; };
 		D9B2616C1BEF52730038C00A /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B260BE1BEF52730038C00A /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -187,6 +255,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA6DDCE21E24E53004CC4D9 /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA6DDD121E24E53004CC4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA6DDD621E25091004CC4D9 /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
+		BFA6DDD821E25199004CC4D9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		BFA6DDDA21E2519E004CC4D9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		BFA6DDDC21E251B3004CC4D9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDDE21E251BA004CC4D9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDE021E251C1004CC4D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDE221E251CA004CC4D9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDE421E251CF004CC4D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDE621E251D9004CC4D9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDE821E251F6004CC4D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		BFA6DDEA21E251FF004CC4D9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		D9B260AB1BEF51350038C00A /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B260B71BEF51A90038C00A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B260BC1BEF52730038C00A /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
@@ -369,6 +450,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BFA6DDCB21E24E53004CC4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA6DDEB21E251FF004CC4D9 /* Accelerate.framework in Frameworks */,
+				BFA6DDE921E251F6004CC4D9 /* SystemConfiguration.framework in Frameworks */,
+				BFA6DDE721E251D9004CC4D9 /* ImageIO.framework in Frameworks */,
+				BFA6DDE521E251CF004CC4D9 /* QuartzCore.framework in Frameworks */,
+				BFA6DDE321E251CA004CC4D9 /* CoreImage.framework in Frameworks */,
+				BFA6DDE121E251C1004CC4D9 /* CoreGraphics.framework in Frameworks */,
+				BFA6DDDF21E251BB004CC4D9 /* CoreText.framework in Frameworks */,
+				BFA6DDDD21E251B3004CC4D9 /* CoreFoundation.framework in Frameworks */,
+				BFA6DDDB21E2519E004CC4D9 /* libsqlite3.tbd in Frameworks */,
+				BFA6DDD921E25199004CC4D9 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9B260A71BEF51350038C00A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,10 +490,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA6DDCF21E24E53004CC4D9 /* YYKit_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BFA6DDD121E24E53004CC4D9 /* Info.plist */,
+				BFA6DDD621E25091004CC4D9 /* YYKit.h */,
+			);
+			path = YYKit_macOS;
+			sourceTree = "<group>";
+		};
 		D9B260A11BEF51350038C00A = {
 			isa = PBXGroup;
 			children = (
 				D9B260B91BEF52730038C00A /* YYKit */,
+				BFA6DDCF21E24E53004CC4D9 /* YYKit_macOS */,
 				D9B260B61BEF51880038C00A /* Frameworks */,
 				D9B260AC1BEF51350038C00A /* Products */,
 			);
@@ -405,6 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B260AB1BEF51350038C00A /* YYKit.framework */,
+				BFA6DDCE21E24E53004CC4D9 /* YYKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -412,6 +521,16 @@
 		D9B260B61BEF51880038C00A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6DDEA21E251FF004CC4D9 /* Accelerate.framework */,
+				BFA6DDE821E251F6004CC4D9 /* SystemConfiguration.framework */,
+				BFA6DDE621E251D9004CC4D9 /* ImageIO.framework */,
+				BFA6DDE421E251CF004CC4D9 /* QuartzCore.framework */,
+				BFA6DDE221E251CA004CC4D9 /* CoreImage.framework */,
+				BFA6DDE021E251C1004CC4D9 /* CoreGraphics.framework */,
+				BFA6DDDE21E251BA004CC4D9 /* CoreText.framework */,
+				BFA6DDDC21E251B3004CC4D9 /* CoreFoundation.framework */,
+				BFA6DDDA21E2519E004CC4D9 /* libsqlite3.tbd */,
+				BFA6DDD821E25199004CC4D9 /* libz.tbd */,
 				D9B260B71BEF51A90038C00A /* Info.plist */,
 				D9B262241BEF53390038C00A /* libsqlite3.tbd */,
 				D9B262221BEF53350038C00A /* libz.tbd */,
@@ -701,6 +820,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BFA6DDC921E24E53004CC4D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA6DE1F21E252D7004CC4D9 /* YYFileHash.h in Headers */,
+				BFA6DE2021E252D7004CC4D9 /* YYWeakProxy.h in Headers */,
+				BFA6DE2121E252D7004CC4D9 /* YYTimer.h in Headers */,
+				BFA6DE2221E252D7004CC4D9 /* YYTransaction.h in Headers */,
+				BFA6DE2321E252D7004CC4D9 /* YYSentinel.h in Headers */,
+				BFA6DE2421E252D7004CC4D9 /* YYDispatchQueuePool.h in Headers */,
+				BFA6DE2521E252D7004CC4D9 /* YYThreadSafeArray.h in Headers */,
+				BFA6DE2621E252D7004CC4D9 /* YYThreadSafeDictionary.h in Headers */,
+				BFA6DE1821E252C3004CC4D9 /* NSObject+YYModel.h in Headers */,
+				BFA6DE1921E252C3004CC4D9 /* YYClassInfo.h in Headers */,
+				BFA6DE1A21E252C3004CC4D9 /* YYCache.h in Headers */,
+				BFA6DE1B21E252C3004CC4D9 /* YYMemoryCache.h in Headers */,
+				BFA6DE1C21E252C3004CC4D9 /* YYDiskCache.h in Headers */,
+				BFA6DE1D21E252C3004CC4D9 /* YYKVStorage.h in Headers */,
+				BFA6DE0921E252B0004CC4D9 /* YYKitMacro.h in Headers */,
+				BFA6DE0A21E252B0004CC4D9 /* NSObject+YYAdd.h in Headers */,
+				BFA6DE0B21E252B0004CC4D9 /* NSObject+YYAddForARC.h in Headers */,
+				BFA6DE0C21E252B1004CC4D9 /* NSObject+YYAddForKVO.h in Headers */,
+				BFA6DE0D21E252B1004CC4D9 /* NSString+YYAdd.h in Headers */,
+				BFA6DE0E21E252B1004CC4D9 /* NSNumber+YYAdd.h in Headers */,
+				BFA6DE0F21E252B1004CC4D9 /* NSData+YYAdd.h in Headers */,
+				BFA6DE1021E252B1004CC4D9 /* NSArray+YYAdd.h in Headers */,
+				BFA6DE1121E252B1004CC4D9 /* NSDictionary+YYAdd.h in Headers */,
+				BFA6DE1221E252B1004CC4D9 /* NSDate+YYAdd.h in Headers */,
+				BFA6DE1321E252B1004CC4D9 /* NSNotificationCenter+YYAdd.h in Headers */,
+				BFA6DE1421E252B1004CC4D9 /* NSKeyedUnarchiver+YYAdd.h in Headers */,
+				BFA6DE1521E252B1004CC4D9 /* NSTimer+YYAdd.h in Headers */,
+				BFA6DE1621E252B1004CC4D9 /* NSBundle+YYAdd.h in Headers */,
+				BFA6DE1721E252B1004CC4D9 /* NSThread+YYAdd.h in Headers */,
+				BFA6DDD721E25091004CC4D9 /* YYKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9B260A81BEF51350038C00A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -794,6 +950,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BFA6DDCD21E24E53004CC4D9 /* YYKit_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA6DDD521E24E53004CC4D9 /* Build configuration list for PBXNativeTarget "YYKit_macOS" */;
+			buildPhases = (
+				BFA6DDC921E24E53004CC4D9 /* Headers */,
+				BFA6DDCA21E24E53004CC4D9 /* Sources */,
+				BFA6DDCB21E24E53004CC4D9 /* Frameworks */,
+				BFA6DDCC21E24E53004CC4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYKit_macOS;
+			productName = YYKit_macOS;
+			productReference = BFA6DDCE21E24E53004CC4D9 /* YYKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D9B260AA1BEF51350038C00A /* YYKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9B260B31BEF51350038C00A /* Build configuration list for PBXNativeTarget "YYKit" */;
@@ -821,6 +995,9 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ibireme;
 				TargetAttributes = {
+					BFA6DDCD21E24E53004CC4D9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					D9B260AA1BEF51350038C00A = {
 						CreatedOnToolsVersion = 9.0;
 					};
@@ -839,11 +1016,19 @@
 			projectRoot = "";
 			targets = (
 				D9B260AA1BEF51350038C00A /* YYKit */,
+				BFA6DDCD21E24E53004CC4D9 /* YYKit_macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BFA6DDCC21E24E53004CC4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9B260A91BEF51350038C00A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -854,6 +1039,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BFA6DDCA21E24E53004CC4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA6DE0121E2529E004CC4D9 /* YYFileHash.m in Sources */,
+				BFA6DE0221E2529E004CC4D9 /* YYWeakProxy.m in Sources */,
+				BFA6DE0321E2529E004CC4D9 /* YYTimer.m in Sources */,
+				BFA6DE0421E2529E004CC4D9 /* YYTransaction.m in Sources */,
+				BFA6DE0521E2529E004CC4D9 /* YYSentinel.m in Sources */,
+				BFA6DE0621E2529E004CC4D9 /* YYDispatchQueuePool.m in Sources */,
+				BFA6DE0721E2529E004CC4D9 /* YYThreadSafeArray.m in Sources */,
+				BFA6DE0821E2529E004CC4D9 /* YYThreadSafeDictionary.m in Sources */,
+				BFA6DDFA21E25286004CC4D9 /* NSObject+YYModel.m in Sources */,
+				BFA6DDFB21E25286004CC4D9 /* YYClassInfo.m in Sources */,
+				BFA6DDFC21E25286004CC4D9 /* YYCache.m in Sources */,
+				BFA6DDFD21E25286004CC4D9 /* YYMemoryCache.m in Sources */,
+				BFA6DDFE21E25286004CC4D9 /* YYDiskCache.m in Sources */,
+				BFA6DDFF21E25286004CC4D9 /* YYKVStorage.m in Sources */,
+				BFA6DDEC21E2527B004CC4D9 /* NSObject+YYAdd.m in Sources */,
+				BFA6DDED21E2527B004CC4D9 /* NSObject+YYAddForARC.m in Sources */,
+				BFA6DDEE21E2527B004CC4D9 /* NSObject+YYAddForKVO.m in Sources */,
+				BFA6DDEF21E2527B004CC4D9 /* NSString+YYAdd.m in Sources */,
+				BFA6DDF021E2527B004CC4D9 /* NSNumber+YYAdd.m in Sources */,
+				BFA6DDF121E2527B004CC4D9 /* NSData+YYAdd.m in Sources */,
+				BFA6DDF221E2527B004CC4D9 /* NSArray+YYAdd.m in Sources */,
+				BFA6DDF321E2527B004CC4D9 /* NSDictionary+YYAdd.m in Sources */,
+				BFA6DDF421E2527B004CC4D9 /* NSDate+YYAdd.m in Sources */,
+				BFA6DDF521E2527B004CC4D9 /* NSNotificationCenter+YYAdd.m in Sources */,
+				BFA6DDF621E2527B004CC4D9 /* NSKeyedUnarchiver+YYAdd.m in Sources */,
+				BFA6DDF721E2527B004CC4D9 /* NSTimer+YYAdd.m in Sources */,
+				BFA6DDF821E2527B004CC4D9 /* NSBundle+YYAdd.m in Sources */,
+				BFA6DDF921E2527B004CC4D9 /* NSThread+YYAdd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9B260A61BEF51350038C00A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -945,6 +1165,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BFA6DDD321E24E53004CC4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BFT2574V47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = YYKit_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.YYKit-macOS";
+				PRODUCT_NAME = YYKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BFA6DDD421E24E53004CC4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BFT2574V47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = YYKit_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vincent.YYKit-macOS";
+				PRODUCT_NAME = YYKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D9B260B11BEF51350038C00A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1092,6 +1371,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BFA6DDD521E24E53004CC4D9 /* Build configuration list for PBXNativeTarget "YYKit_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA6DDD321E24E53004CC4D9 /* Debug */,
+				BFA6DDD421E24E53004CC4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D9B260A51BEF51350038C00A /* Build configuration list for PBXProject "YYKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
