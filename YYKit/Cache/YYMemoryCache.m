@@ -10,10 +10,18 @@
 //
 
 #import "YYMemoryCache.h"
-//#import <UIKit/UIKit.h>
+
 #import <CoreFoundation/CoreFoundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <pthread.h>
+
+
+
+#if TARGET_OS_IOS
+    #import <UIKit/UIKit.h>
+#endif
+
+
 
 #if __has_include("YYDispatchQueuePool.h")
 #import "YYDispatchQueuePool.h"

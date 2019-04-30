@@ -14,6 +14,15 @@
 #import <objc/objc.h>
 #import <objc/runtime.h>
 
+
+#if TARGET_OS_IOS
+
+#import <CoreGraphics/CoreGraphics.h>
+#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
+
+#endif
+
 YYSYNTH_DUMMY_CLASS(NSObject_YYAdd)
 
 
